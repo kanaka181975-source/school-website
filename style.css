@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#004080;
+    color:white;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* Hero */
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffd700;
+    color:black;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Sections */
+section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    color:#004080;
+    margin-bottom:15px;
+}
+
+/* Notice */
+.notice{
+    background:#004080;
+    color:white;
+}
+
+.notice marquee{
+    font-size:20px;
+    padding:10px;
+}
+
+/* Contact Form */
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    background:#004080;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+form button:hover{
+    background:#0066cc;
+}
+
+/* Footer */
+footer{
+    background:#00264d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.social i{
+    margin:10px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.social i:hover{
+    color:#ffd700;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.cards{
+    flex-direction:column;
+    align-items:center;
+}
+
+}
+form select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.card img{
+    width:100%;
+    height:200px;
+    border-radius:8px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+#about{
+    text-align:center;
+    padding:50px;
+    background:#f4f4f4;
+}
+
+#about h2{
+    color:#004080;
+    margin-bottom:20px;
+}
+
+#about p{
+    font-size:18px;
+    width:80%;
+    margin:10px auto;
+    line-height:1.6;
+}
+
+#about img{
+    width:80%;
+    max-width:700px;
+    margin-top:20px;
+    border-radius:10px;
+}

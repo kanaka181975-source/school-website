@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Green Valley Public School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>🎓 Green Valley Public School</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h1>Student Result Portal</h1>
+    <p>Enter your Registration Number to view your result.</p>
+
+    <form id="resultForm">
+        <input type="text" id="regNo" placeholder="Registration Number" required>
+
+        <button type="submit">Check Result</button>
+    </form>
+
+    <div id="result" style="margin-top:20px; font-size:20px;"></div>
+
+</section>
+
+<footer>
+    <p>© 2026 Green Valley Public School | All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById("resultForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let reg = document.getElementById("regNo").value;
+    let result = document.getElementById("result");
+
+    if(reg === "GV1001"){
+        result.innerHTML =
+        "<h2>Result</h2>" +
+        "<p><b>Name:</b> Rahul Kumar</p>" +
